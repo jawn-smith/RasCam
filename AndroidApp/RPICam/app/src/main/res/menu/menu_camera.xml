@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="rpi.rpicam.StatusCheck">
+    <item
+        android:id="@+id/poweroff"
+        android:orderInCategory="100"
+        android:title="Shutdown Camera"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/reboot"
+        android:orderInCategory="100"
+        android:title="Reboot Camera"
+        app:showAsAction="never" />
+
+</menu>

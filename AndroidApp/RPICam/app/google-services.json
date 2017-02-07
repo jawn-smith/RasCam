@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1031371287713",
+    "firebase_url": "https://rpi-cam-cbf61.firebaseio.com",
+    "project_id": "rpi-cam-cbf61",
+    "storage_bucket": "rpi-cam-cbf61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031371287713:android:995e8b3035793548",
+        "android_client_info": {
+          "package_name": "rpi.rpicam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031371287713-c66kgacdcj6unjtj0cerht9eu7ch795f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWK27Ezi0htb221dy1PmZi8bF2hYt6jjs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "rpi.rpicam"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.google.firebase:firebase-core:9.2.0'
+    compile 'com.google.firebase:firebase-messaging:9.2.0'
+    compile files('src/main/java/rpi/rpicam/com.jcraft.jsch_0.1.46.v201205102330.jar')
+    compile "de.mrmaffen:vlc-android-sdk:1.9.8"
+}
+apply plugin: 'com.google.gms.google-services'

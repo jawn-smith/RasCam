@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/row2"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:padding="40dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:tint="@color/iconColor"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:src="@mipmap/ic_play2"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:onClick="streamVideo"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Stream Video"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="40dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:tint="@color/iconColor"
+                android:src="@mipmap/ic_pause2"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:onClick="pauseSystem"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Pause Camera"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/row3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:padding="40dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:tint="@color/iconColor"
+                android:layout_height="fill_parent"
+                android:src="@mipmap/ic_record"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:onClick="RecordVideo"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Record Video"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:padding="40dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:tint="@color/iconColor"
+                android:layout_height="fill_parent"
+                android:src="@mipmap/ic_photo"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:onClick="TakePhoto"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Take Photo"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+</LinearLayout>
