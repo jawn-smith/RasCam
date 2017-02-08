@@ -3,7 +3,7 @@
 if [ $( ps -e | grep pause | wc -l ) -eq 0 ] && [ $( ps -e | grep take_photo | wc -l ) -eq 0 ] && [ $( ps -e | grep record_video | wc -l ) -eq 0 ]
 then
 
-	william=$( cat william_token.txt )
+	william=$( cat user1_token.txt )
 
 	#curl -X POST --header "Authorization: key=AIzaSyACyMENSr9N-YeGCakqn--aISKr0473SvA" --Header "Content-Type: application/json" https://fcm.googleapis.com/fcm/send -d "{\"to\":\"$william\",\"data\":{\"title\":\"System Alert\",\"detail\":\"Checking Status\"},\"priority\":10}"
 

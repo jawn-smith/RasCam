@@ -54,8 +54,8 @@ do
 			#middle_pic=$( ls -lc *jpg | head -n 2 | tail -1 | awk '{print $9}'  )
 
 	                # Alert Users by sending them middle picture
-			william=$( cat william_token.txt )
-			heather=$( cat heather_token.txt )
+			william=$( cat user1_token.txt )
+			heather=$( cat user2_token.txt )
         	        #echo "Motion was detected by the upstairs security camera in these images. Additional photos and a video have been saved to the server." | mutt -s "Security Alert" -a *.jpg -- $recipients
 			curl -X POST --header "Authorization: key=AIzaSyACyMENSr9N-YeGCakqn--aISKr0473SvA" --Header "Content-Type: application/json" https://fcm.googleapis.com/fcm/send -d "{\"to\":\"$heather\",\"data\":{\"title\":\"Security Alert\",\"detail\":\"Motion was detected by the upstairs camera\"},\"priority\":10}"
 			curl -X POST --header "Authorization: key=AIzaSyACyMENSr9N-YeGCakqn--aISKr0473SvA" --Header "Content-Type: application/json" https://fcm.googleapis.com/fcm/send -d "{\"to\":\"$william\",\"data\":{\"title\":\"Security Alert\",\"detail\":\"Motion was detected by the upstairs camera\"},\"priority\":10}"
